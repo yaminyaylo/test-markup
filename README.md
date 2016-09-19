@@ -3,5 +3,5 @@
 Installation
 ------------
 
-    $ npm install leaderboard
+    $ npm install
     $ gulp dev
