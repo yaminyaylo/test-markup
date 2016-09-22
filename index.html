@@ -14,6 +14,9 @@
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Animate CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -207,14 +210,10 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-lg-12 col-lg-offset-1 text-left">
-                <h3 class="section-subtitle">Send us a message</h3>  
-              </div>
-            </div>
-            <div class="row">
               <div class="col-lg-8 col-lg-offset-1 col-md-8">
+                <h3 class="section-subtitle">Send us a message</h3>  
                 <form id="form-contact" method="post" novalidate="novalidate" class="form-contact">
-                  <div class="row">
+                  <div class="row form-contact-container animated">
                     <div class="col-md-6 form-group">
                       <input type="text" placeholder="WHAT IS YOUR NAME" name="name" required="required" class="contact-aside-input form-control">
                     </div>
@@ -224,21 +223,28 @@
                     <div class="col-md-12 form-group">
                       <textarea id="comment" rows="3" cols="9" placeholder="TELL US YOUR COMMENTS" name="comment" required="required" class="contact-aside-input form-control"></textarea>
                     </div>
-                    <div class="col-md-12 form-group">
+                    <div class="col-md-12 form-group text-center">
                       <button type="submit" class="btn btn-xl">Send Message</button>
+                    </div>
+                  </div>
+                  <div class="row text-center form-contact-container-on-success animated">
+                    <div class="col-md-12 form-group text-center">
+                      <i class="fa fa-trophy fa-5x"></i>
+                      <h2>Tadam! Your form was sent!</h2>
+                      <button type="submit" class="btn btn-xl">Back</button>
                     </div>
                   </div>
                 </form>
               </div>
               <div class="col-lg-3 col-md-4 prn">
-                <article>
+                <article class="contact-location">
                   <h4 class="contact-title">
                     <i class="fa fa-map-marker fa-3x"></i>
                     <span>FIND <br>OUR LOCATION</span>
                   </h4>
                   <div class="text">Somewhere Place, FC, United State of America</div>
                 </article>
-                <article>
+                <article class="contact-location">
                   <h4 class="contact-title">
                     <i class="fa fa-volume-control-phone fa-3x"></i>
                     <span>CALL<br>FOR INFORMATION</span>
@@ -249,7 +255,7 @@
                         <span class="contact-aside-text">Head Office </span>
                       </div>
                       <div class="col-xs-6">
-                        <span>(+01) 111 111-11111</span>
+                        <span>(+01) 111 111-1111</span>
                       </div>
                      </div>
                   </div>

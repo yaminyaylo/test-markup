@@ -351,8 +351,8 @@ section#contact {
         color: @theme-primary;
     }
     .section-subtitle {
-      .serif-font;
-      font-style: italic;
+      border-bottom: 1px solid #fed136;
+      margin: 30px 0;
     }
     .form-group {
         margin-bottom: 25px;
@@ -364,9 +364,12 @@ section#contact {
             height: auto;
         }
         textarea.form-control {
-            height: 236px;
+            height: 120px;
         }
     }
+  .contact-location {
+    margin: 10px 0 55px;
+  }
   .contact-title {
     font-size: 20px;
     text-transform: uppercase;
@@ -383,34 +386,47 @@ section#contact {
       display: inline-block;
     }
   }
+  .form-contact-container-on-success {
+    display: none;
+    position: absolute;
+    top: 86px;
+    left: 0;
+    right: 0;
 
-    .form-control:focus {
-        border-color: @theme-primary;
-        box-shadow: none;
+    i {
+      margin: 15px 0; 
     }
-    ::-webkit-input-placeholder {
-       .heading-font;
-       font-weight: 700;
-       color: @gray-lighter;
+    h2 {
+      margin: 40px 0;
     }
-    :-moz-placeholder { /* Firefox 18- */
-       .heading-font;
-       font-weight: 700;
-       color: @gray-lighter;
-    }
-    ::-moz-placeholder {  /* Firefox 19+ */
-       .heading-font;
-       font-weight: 700;
-       color: @gray-lighter;
-    }
-    :-ms-input-placeholder {  
-       .heading-font;
-       font-weight: 700;
-       color: @gray-lighter;
-    }
-    .text-danger {
-        color: @theme-danger;
-    }
+  }
+  .form-control:focus {
+      border-color: @theme-primary;
+      box-shadow: none;
+  }
+  ::-webkit-input-placeholder {
+     .heading-font;
+     font-weight: 700;
+     color: @gray-lighter;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+     .heading-font;
+     font-weight: 700;
+     color: @gray-lighter;
+  }
+  ::-moz-placeholder {  /* Firefox 19+ */
+     .heading-font;
+     font-weight: 700;
+     color: @gray-lighter;
+  }
+  :-ms-input-placeholder {  
+     .heading-font;
+     font-weight: 700;
+     color: @gray-lighter;
+  }
+  .text-danger {
+      color: @theme-danger;
+  }
 }
 
 // Footer
